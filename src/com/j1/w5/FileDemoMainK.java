@@ -1,7 +1,7 @@
 /*
  * @author kjy
  * @since 160404
- * 
+ * homework
  * 
  */
 
@@ -15,7 +15,7 @@ import java.io.Reader;
 import java.io.File;
 
 
-public class FileDemoMain {
+public class FileDemoMainK {
   public static void main(String[] args) throws Exception {
     File readme=null;
     InputStream isReadme = null;
@@ -33,7 +33,7 @@ public class FileDemoMain {
       String cwd = new File(".").getCanonicalPath();
       System.out.println("cwd is "+cwd);
       
-      readme=new File(cwd,"HelloWorld.java");
+      readme=new File(cwd,"HelloWorldK.java");
       System.out.println("readme is "+readme);
       
       isReadme = new FileInputStream(readme);
@@ -49,6 +49,19 @@ public class FileDemoMain {
     }finally{
       if(isReadme != null)
         isReadme.close();
+    }
+    try{
+      isReadme=new FileInputStream(readme);
+      isrReadme=new InputStreamReader(isReadme,"UTF8");
+      brReadme=new BufferedReader(isrReadme);
+      while((str=brReadme.readLine())!=null){
+        System.out.println("--"+str);
+      }
+    }catch(Exception e){
+      e.printStackTrace();
+    }finally{
+      if(brReadme != null)
+        brReadme.close();
     }
   }
 }
