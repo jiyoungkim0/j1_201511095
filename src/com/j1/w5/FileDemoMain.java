@@ -37,7 +37,7 @@ public class FileDemoMain {
       System.out.println("readme is "+readme);
       
       isReadme = new FileInputStream(readme);
-      System.out.println("readme is +"+readme);
+      System.out.println("readme is "+readme);
       
       isReadme = new FileInputStream(readme);
       while((i=isReadme.read()) !=-1) {
