@@ -1,0 +1,15 @@
+﻿@startuml
+title java.io
+class InputStream {
+  +abstract read():int
+}
+InputStream <|-- ByteArrayInputStream
+InputStream <|-- StringBufferInputStream
+InputStream <|-- FileInputStream
+InputStream <|-- FilterInputStream
+FilterInputStream *-- InputStream
+FilterInputStream <|-- DataInputStream
+FilterInputStream <|-- LineNumberInputStream
+FilterInputStream <|-- BufferedInputStream
+FilterInputStream <|-- PushbackInputStream
+@enduml
