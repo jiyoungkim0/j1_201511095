@@ -5,7 +5,7 @@ public class VeggiePizza extends Pizza {
     name="Veggie Pizza";
     dough = "Regular Crust";
     sauce = "Marinara Pizza Sauce";
-    toppings.add("Fresh Mozzarella");
+    toppings.add("Fresh Veggie");
     toppings.add("Parmesan");
   }
 }
