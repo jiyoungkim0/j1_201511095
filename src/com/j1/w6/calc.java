@@ -38,7 +38,12 @@ public class calc {
       break;
         
       case "/":
-      System.out.println("Result is "+(i1/i2));
+      if(i2 ==0){
+        System.out.println("Error");
+      }
+      else{
+        System.out.println("Result is "+(i1/i2));
+      }
       break;
         
       default:
